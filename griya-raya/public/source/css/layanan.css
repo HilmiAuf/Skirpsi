@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+/* div {
+    border:  solid
+} */
+
+div .up img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+div .paket div {
+    border-radius: 10px;
+    /* margin-top: 5%; */
+    color: #252523;
+    /* background-color: #252523; */
+}
+div .paket div {
+    color: #F7C873;
+}
+div .paket p{
+    color: #252525;
+    font-family: lato;
+}
+
+
+div .paket button {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #252523;     
+    border-color: #F7C873;
+    border: none ;
+    font-weight: bold;
+}
+.paket li {
+    color: #252525;
+}
+
+.layanan div .card {
+    
+}
+
+.layanan img {
+    width: 100%;
+}
+.testimoni .card-footer {
+    background-color: white;
+    border: none;
+}
+
+/* .layanan-user .isi-paket{ 
+    border: 4px solid black;
+} */
+
+.layanan-user .isi-paket label {
+    font-family: lato;
+    font-weight: bold;
+    color: black;
+
+}
+.layanan-user .isi-paket button {
+    background-color: black;
+    color: white;
+    font-family: lato;
+    font-weight: bold;
+}
+
+.layanan-user img {
+    width: 100%;
+}
+.layanan-user .paket .judul-layanan {
+    font-family: Scheherazade;
+    font-weight: bold;
+}
+
+.profile-user img {
+    width: 100%;
+}
+
+.profile-user .fs-1 {
+    color: black;
+    font-family: Scheherazade;
+    font-weight: bold;
+}

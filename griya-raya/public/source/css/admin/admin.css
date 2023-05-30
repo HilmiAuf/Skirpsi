@@ -1,0 +1,46 @@
+.admin {
+    /* border: none; */
+    margin-bottom: 1%;
+    /* background-color: #252523;
+     */
+}
+
+.admin div img {
+    width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.admin div a img {
+    width: 10%;
+    float: left;
+}
+
+.admin .col-4 div {
+    padding-top: 5%;
+}
+
+.layanan-admin .add-layanan button {
+    background-color: black;
+    border-color: black;
+    color: white;
+    font-family: lato;
+    font-weight: bold;
+}
+
+.layanan-admin .edit-data button {
+    background-color: blue;
+    border-color: black;
+    color: white;
+    font-family: lato;
+    font-weight: bold;
+}
+
+.layanan-admin button {
+    background-color: red;
+    border-color: black;
+    color: white;
+    font-family: lato;
+    font-weight: bold;
+}

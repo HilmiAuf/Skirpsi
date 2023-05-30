@@ -1,0 +1,60 @@
+.navbar span{
+    font-family: Scheherazade;
+    font-size: larger;
+    font-style: none;
+    text-decoration: none;
+}
+.navbar .satu {
+    color: #F7C873;
+    
+}
+
+.navbar .dua {
+    color: black;
+}
+
+.navbar ul li {
+    font-family: lato;
+    font-weight: bold;
+}
+
+footer {
+    background-image: url('/source/img/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+footer div .fs-4 {
+    font-family: Scheherazade;
+    color: #F7C873;
+    margin:0 ;
+}
+footer ul li {
+    margin: 0;
+    color: white;
+    font-family: lato;
+}
+footer .satu {
+    color: #F7C873;
+    
+}
+
+footer .dua {
+    color: white;
+}
+
+.navbar button {
+    background: none;
+    border: none ;
+    font-family: lato ;
+    font-weight: bold;
+    padding: 8px;
+    color: #000000A6;
+    padding-left: 0;
+}
+
+
+
+
+
+

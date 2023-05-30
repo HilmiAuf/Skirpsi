@@ -1,0 +1,31 @@
+.login .row div {
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: white;
+}
+
+
+a .satu {
+    color: #F7C873;
+    font-family: Scheherazade;
+}
+a .dua {
+    color: black;
+    font-family: Scheherazade;
+}
+.login div label {
+    font-family: lato;
+}
+.login div input {
+    width: 80%;
+    margin-left: auto ;
+    margin-right: auto;
+}
+
+.login button {
+    background-color: #F7C873;
+    color: black ;
+    font-family: lato;
+    width: 80%;
+
+}

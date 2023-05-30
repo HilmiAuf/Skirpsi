@@ -1,0 +1,193 @@
+
+html,
+    body {
+      position: relative;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background: #eee;
+      color: #000;
+      font-family: lato;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+div .kontak img {
+    width: 100%;
+    height: auto;
+}
+
+.beranda img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.galery div p {
+    font-family: Brush Script MT;
+    border-bottom: 4px solid black;
+}
+
+.about .text-center p {
+    font-family: Scheherazade;
+    color: #F7C873;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.about .isi p {
+    text-align: justify;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.about .isi button {
+    background-color:#F7C873 ;
+    color: #000000;
+    border-color: black;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    width: 50%;
+    cursor: pointer;
+}
+
+.about .isi button:hover {
+    background-color: #000000;
+    color: #F7C873;
+    border-color: #000000;
+}
+
+.last img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.mid1 img {
+    max-width: 60%;
+    height: auto;
+}
+
+.fs-1 {
+    color: #F7C873;
+    font-family: Scheherazade ;
+    font-weight: bold;
+}
+.fs-4 {
+    color: #F7C873;
+    font-family: Scheherazade ;
+}
+.testimoni img {
+    width: 100%;
+}
+.testimoni button {
+    background-color:black ;
+    color: white;
+    border-color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    width: 10%;
+    cursor: pointer;
+}
+.testimoni button:hover {
+    background-color: #000000;
+    color: white;
+    border-color: #000000;
+}
+
+.pesanan img {
+    width: 100%;
+}
+.pesanan button {
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+    border-color: #F7C873;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.pesanan button:hover {
+    background-color: red;
+    color: black;
+    border-color: white;
+}
+
+.testimoni-user {
+    font-family: lato;
+    font-weight: bold;
+    color: #000000;
+}
+
+.testimoni-user img {
+    width: 100%;
+}
+
+.testimoni-user .top {
+    font-family: Scheherazade;
+    font-weight: bold;
+    color: black;
+}
+
+.testimoni-user .mt-3 {
+    background-color:black ;
+    color: white;
+    border-color: black;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    width: 100%;
+    cursor: pointer;
+}
+
+.testimoni-user .pull-right button {
+    background-color:black ;
+    color: white;
+    border-color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.halaman-about {
+    font-family: lato ;
+    color: black ;
+    width: 100%;
+}
+
+.halaman-about img {
+    width: 100%;
+}
+
+.halaman-about .visi-misi img {
+    width: 100%;
+}
+
+.halaman-about .fs-6{
+    text-align: justify;    
+}
+
+
+
+
+
+
