@@ -28,9 +28,9 @@
                 </a>
                 <form method="POST" action="/registrasi">
                     @csrf
-                    <label for="name" class="form-label">Nama Lengkap</label>
+                    <label for="name" class="form-label">Name</label>
                     <input type="text" name="name" class="form-control @error('fullname') is-invalid @enderror mb-2 "
-                        id="name" name="name" value="{{ old('name') }}" placeholder="Nama Lengkap">
+                        id="name" name="name" value="{{ old('name') }}" placeholder="Name">
                     @error('name')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -53,7 +53,7 @@
                         {{ $message }}
                     </div>
                     @enderror
-                    <label for="password_confirmation" class="form-label">Konfirmasi Password</label>
+                    <label for="password_confirmation" class="form-label">Confirmation Password </label>
                     <input type="password" id=""
                         class="form-control @error('password_confirmation') is-invalid @enderror"
                         name="password_confirmation" aria-describedby="passwordHelpBlock"

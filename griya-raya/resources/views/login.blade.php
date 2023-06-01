@@ -40,7 +40,7 @@
                         placeholder="Enter your password">
                     <button type="submit" class="btn mb-3">Submit</button>
                     <p>
-                        Kamu belum punya akun ? <a href="/registrasi"> DAFTAR DISINI! </a>
+                        Don't have an account yet?  <a href="/registrasi"> REGISTER HERE! </a>
                     </p>
                 </form>
                 <img src="/source/img/Batas-layanan2.png" alt="">
