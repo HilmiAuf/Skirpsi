@@ -19,6 +19,7 @@
     <div class="login container text-center">
         <div class="row justify-content-center align-items-center align-self-center " style="height:100vh;">
             <div class="col-lg-6 col-md-6 col-sm-6 align-items-center align-self-center">
+                <img src="/source/img/Batas-layanan.png" alt="">
                 <p class="text-black"><i class="fas fa-users fa-7x"></i></p>
                 <a href="/" style="text-decoration: none;">
                     <span class="satu fs-2">Griya</span>
@@ -42,6 +43,7 @@
                         Kamu belum punya akun ? <a href="/registrasi"> DAFTAR DISINI! </a>
                     </p>
                 </form>
+                <img src="/source/img/Batas-layanan2.png" alt="">
             </div>
         </div>
     </div>

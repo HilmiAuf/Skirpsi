@@ -20,6 +20,7 @@
     <div class="login container text-center">
         <div class="row justify-content-center align-items-center align-self-center " style="height:100vh;">
             <div class="col-lg-6 col-md-6 col-sm-6 align-items-center align-self-center">
+                <img src="/source/img/Batas-layanan.png" alt="">
                 <p class="text-black"><i class="fas fa-users fa-7x"></i></p>
                 <a href="/" style="text-decoration: none;">
                     <span class="satu fs-2">Griya</span>
@@ -62,10 +63,10 @@
                         {{ $message }}
                     </div>
                     @enderror
-                    <button type="submit" class="mt-3 mb-3 "> Submit </button>
+                    <button type="submit" class="btn mt-3 mb-3 "> SUBMIT </button>
                 </form>
+                <img src="/source/img/Batas-layanan.png" alt="">
             </div>
-
         </div>
     </div>
     </div>

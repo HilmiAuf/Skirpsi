@@ -1,8 +1,8 @@
-.login .row div {
+/* .login .row div {
     border: 2px solid black;
     border-radius: 30px;
     background-color: white;
-}
+} */
 
 
 a .satu {
@@ -28,4 +28,8 @@ a .dua {
     font-family: lato;
     width: 80%;
 
+}
+
+.login img {
+    width: 100%;
 }
