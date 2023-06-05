@@ -121,18 +121,11 @@ div .kontak img {
     width: 100%;
 }
 .pesanan button {
-    background-color: white;
-    color: #000000;
-    border-radius: 5px;
-    border-color: #F7C873;
-    transition-duration: 0.4s;
-    cursor: pointer;
+    background: none;
+    border: none;
+    color: #000000A6;
 }
-.pesanan button:hover {
-    background-color: red;
-    color: black;
-    border-color: white;
-}
+
 
 .testimoni-user {
     font-family: lato;
