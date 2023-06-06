@@ -65,7 +65,7 @@
                     @enderror
                     <button type="submit" class="btn mt-3 mb-3 "> SUBMIT </button>
                 </form>
-                <img src="/source/img/Batas-layanan.png" alt="">
+                <img src="/source/img/Batas-layanan2.png" alt="">
             </div>
         </div>
     </div>
