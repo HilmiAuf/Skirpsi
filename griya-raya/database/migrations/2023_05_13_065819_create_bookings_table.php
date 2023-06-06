@@ -23,7 +23,6 @@ class CreateBookingsTable extends Migration
             $table->text('isi_paket');
             $table->text('foto');
             $table->string('ringkasan');
-
             $table->string('telepon');
             $table->string('alamat');
             $table->date('tanggal');
