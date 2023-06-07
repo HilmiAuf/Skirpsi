@@ -83,5 +83,6 @@ class BookingController extends Controller
             'bookings' => Booking::latest()->where('user_id', auth()->user()->id)->get(),
         ]);
     }
+    
 }
 

@@ -43,7 +43,9 @@
                 </ul>
             </li>
             <li class="nav-item">
+                @auth
                 <a class="nav-link fs-6 me-4" href="/profile">Profile</a>
+                @endauth
             </li>
             <li class="nav-item">
                 @auth
