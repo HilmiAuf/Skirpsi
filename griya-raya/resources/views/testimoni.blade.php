@@ -16,7 +16,7 @@
             <div class="card h-100">
                 <div class="card-header" style="background-color: white ;border: none;">
                     <img src="/source/img/Batas-layanan.png" alt="">
-                    <img src="{{ asset('storage/' . $testimoni->foto) }}" class="" alt="...">
+                    <img style="border-radius:10px;" src="{{ asset('storage/' . $testimoni->foto) }}" class="" alt="...">
                 </div>
                 <div class="card-body ">
                     

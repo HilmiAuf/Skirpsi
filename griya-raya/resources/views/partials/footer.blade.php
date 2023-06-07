@@ -10,30 +10,30 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <ul class="list-unstyled list-inline ">
                     <p class="fs-4">Menu </p>
-                    <li><a class="nav-link fs-6 me-4" href="/">Home</a></li>
-                    <li><a class="nav-link fs-6 me-4" href="/about">About</a></li>
+                    <li><a class="nav-link fs-6 me-4" href="/">Beranda</a></li>
+                    <li><a class="nav-link fs-6 me-4" href="/about">Tentang Kami</a></li>
                     <li><a class="nav-link fs-6 me-4 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Services
+                            Layanan
                         </a>
                         <ul class="dropdown-menu dropdown-menu-center">
-                            <li><a class="dropdown-item" href="/pernikahan">Wedding</a></li>
-                            <li><a class="dropdown-item" href="/akadpernikahan">Marriage Contract</a></li>
+                            <li><a class="dropdown-item" href="/pernikahan">Pernikahan</a></li>
+                            <li><a class="dropdown-item" href="/akadpernikahan">Akad Nikah</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link fs-6 me-4" href="/testimoni">Testimony</a></li>
-                    <li><a class="nav-link fs-6 me-4" href="/pesanan">Order</a></li>
-                    <li><a class="nav-link fs-6 me-4" href="/kontak">Contact</a></li>
-                    <li><a class="nav-link fs-6 me-4" href="/kontak">Profile</a></li>
+                    <li><a class="nav-link fs-6 me-4" href="/testimoni">Testimoni</a></li>
+                    <li><a class="nav-link fs-6 me-4" href="/pesanan">Pesanan</a></li>
+                    <li><a class="nav-link fs-6 me-4" href="/kontak">Kontak</a></li>
+                    <li><a class="nav-link fs-6 me-4" href="/kontak">Profil</a></li>
                 </ul>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <ul class="list-unstyled list-inline ">
-                    <p class="fs-4">Contact Us</p>
+                    <p class="fs-4">Kontak Kami</p>
                     <li><i class="text-white fas fa-envelope me-1"></i> Email : rayatiyati00@gmail.com </li>
-                    <li><i class="text-white fas fa-phone me-1" ></i> Number Phone : 085222160047 </li>
+                    <li><i class="text-white fas fa-phone me-1" ></i> Nomor Telephone : 085222160047 </li>
                     <li><i class="text-white fab fa-whatsapp me-1"></i> WhatsApp : 089664970144 </li>
-                    <li><i class="text-white fas fa-home me-1"></i> Address : Jl. Cideng Raya Blok Pecilon Kidul Gg. Syeh
+                    <li><i class="text-white fas fa-home me-1"></i> Alamat : Jl. Cideng Raya Blok Pecilon Kidul Gg. Syeh
                       Hambari</li>
                 </ul>
             </div>

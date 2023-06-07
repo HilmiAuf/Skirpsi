@@ -14,7 +14,7 @@
                         <th scope="col">Harga</th>
                         <th scope="col">alamat</th>
                         <th scope="col">Pengunjung</th>
-                        <th scope="col">action</th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>

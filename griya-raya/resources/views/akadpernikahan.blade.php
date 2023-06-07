@@ -14,7 +14,7 @@
                     <img src="/source/img/Batas-layanan.png" alt="">
                     <p class="card-title fs-3">{{ $layanan->judul}}</p>
                     <p class="card-text">{{$layanan->ringkasan }}</p>
-                    <a href="/akadpernikahan/{{ $layanan->id }}" class="btn">Go somewhere</a>
+                    <a href="/akadpernikahan/{{ $layanan->id }}" class="btn">Lihat Detail</a>
                     <img src="/source/img/Batas-layanan2.png" alt="">
                 </div>
             </div>

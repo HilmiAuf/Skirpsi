@@ -10,7 +10,7 @@
     <div class="row justify-content-between paket" style="padding: 1%;">
         <div class="col-sm-12 col-md-6 col-lg-6 text-center pt-5 pb-5">
             <img src="/source/img/Batas-layanan.png" alt="">
-            <p class="fs-2 judul-layanan">Package Rp. {{ $layanan->harga}} </p>
+            <p class="fs-2 judul-layanan">Paket Rp. {{ $layanan->harga}} </p>
             <p > {!! $layanan->isi_paket !!}</p>
             <img src="/source/img/Batas-layanan2.png" alt="">
         </div>
@@ -18,13 +18,13 @@
             <img src="/source/img/Batas-layanan.png" alt="">
             <form action="/booking" method="POST" enctype="multipart/form-data">
                 @csrf
-                <label for="nama" class="form-label">Phone Number</label>
+                <label for="nama" class="form-label">Nomor Telephone</label>
                 <input type="tel" name="telepon" class="form-control mb-2" id="nama" required >
-                <label for="" class="form-label">Address</label>
+                <label for="" class="form-label">Alamat</label>
                 <input type="text" name="alamat" class="form-control mb-2" id="exampleInputEmail1" required>
-                <label for="" class="form-label">Date</label>
+                <label for="" class="form-label">Tanggal</label>
                 <input type="date" name="tanggal" class="form-control mb-2" id="exampleInputPassword1" required>
-                <label for="" class="form-label">Participants</label>
+                <label for="" class="form-label">Pengunjung</label>
                 <input type="number" name="jumlah_pengunjung" class="form-control mb-3" id="exampleInputPassword1" required>
                 <input type="hidden" name="category" value="{{$layanan->category}}">
                 <input type="hidden" name="judul" value="{{$layanan->judul}}">
@@ -32,7 +32,7 @@
                 <input type="hidden" name="isi_paket" value="{{$layanan->isi_paket}}">
                 <input type="hidden" name="foto" value="{{$layanan->foto}}">
                 <input type="hidden" name="ringkasan" value="{{$layanan->ringkasan}}">
-                <button type="submit" class="mb-2">BOOK NOW ! </button>
+                <button type="submit" class="mb-2">Pesan Sekarang ! </button>
             </form>
             <img src="/source/img/Batas-layanan2.png" alt="">
         </div>

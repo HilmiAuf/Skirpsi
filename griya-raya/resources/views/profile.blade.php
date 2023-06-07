@@ -6,7 +6,7 @@
         <div class="col align-self-center">
             <div class="row ">
                 <img src="/source/img/Batas-layanan.png" alt="">
-                <p class="fs-1 text-center">YOUR PROFILE</p>
+                <p class="fs-1 text-center">PROFIL ANDA</p>
                 <div class="col-9 align-self-center">
                     <p class="fs-3">Nama</p>
                     <p>"{{ auth()->user()->name }}"</p>
@@ -22,22 +22,22 @@
         <div class="col  align-self-center">
             <div class="row ">
                 <img src="/source/img/Batas-layanan.png" alt="">
-                <p class="fs-1 text-center">CHANGE PASSWORD</p>
+                <p class="fs-1 text-center">GANTI PASSWORD</p>
                 <div class="col-9">
                     <form action="edit-password" method="POST">
                         @method('put')
                         @csrf
-                        <label class="form-label" for="">Last Password</label>
+                        <label class="form-label" for="">Password Lama</label>
                         <input class="form-control" type="password" name="current_password"
-                            placeholder="Last Password ">
-                        <label for="">New Password</label>
-                        <input class="form-control" type="password" name="password" placeholder="New Password ">
-                        <label for="">Confirmed Password</label>
+                            placeholder="Password Lama">
+                        <label for="">Password Baru</label>
+                        <input class="form-control" type="password" name="password" placeholder="Password Baru">
+                        <label for="">Konfirmasi Password</label>
                         <input class="form-control" type="password" name="password_confirmation"
-                            placeholder="Confirmed Password">
+                            placeholder=" Konfirmasi Password ">
                 </div>
                 <div class="col-3">
-                    <button class="btn btn-primary">Save</button>
+                    <button class="btn btn-primary">Simpan</button>
                 </div>
                 </form>
                 <img src="/source/img/Batas-layanan2.png" alt="">

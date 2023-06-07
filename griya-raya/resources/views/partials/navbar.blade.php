@@ -11,19 +11,19 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link fs-6 me-4" href="/">Home</a>
+                <a class="nav-link fs-6 me-4" href="/">Beranda</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fs-6 me-4" href="/about">About</a>
+                <a class="nav-link fs-6 me-4" href="/about">Tentang Kami</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fs-6 me-4" href="/testimoni">Testimony</a>
+                <a class="nav-link fs-6 me-4" href="/testimoni">Testimoni</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fs-6 me-4" href="/pesanan">Order</a>
+                <a class="nav-link fs-6 me-4" href="/pesanan">Pesanan</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fs-6 me-4" href="/kontak">Contact</a>
+                <a class="nav-link fs-6 me-4" href="/kontak">Kontak</a>
             </li>
 
             @auth
@@ -35,26 +35,26 @@
             @endauth
             <li class="nav-item dropdown">
                 <a class="nav-link fs-6 me-4 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Services
+                    Layanan
                 </a>
                 <ul class="dropdown-menu dropdown-menu-center">
-                <li><a class="dropdown-item" href="/pernikahan">Wedding</a></li>
-                <li><a class="dropdown-item" href="/akadpernikahan">Marriage Contract</a></li>
+                <li><a class="dropdown-item" href="/pernikahan">Pernikahan</a></li>
+                <li><a class="dropdown-item" href="/akadpernikahan">Akad Nikah</a></li>
                 </ul>
             </li>
             <li class="nav-item">
                 @auth
-                <a class="nav-link fs-6 me-4" href="/profile">Profile</a>
+                <a class="nav-link fs-6 me-4" href="/profile">Profil</a>
                 @endauth
             </li>
             <li class="nav-item">
                 @auth
                 <form action="/logout" method="post">
                     @csrf
-                    <button type="submit" class="btn-logout fs-6"><i class="bi bi-door-open"></i>Logout</button>
+                    <button type="submit" class="btn-logout fs-6"><i class="bi bi-door-open"></i>Keluar</button>
                 </form>
                 @else
-                <a class="nav-link fs-6 " href="/login">Login</a>
+                <a class="nav-link fs-6 " href="/login">Masuk</a>
                 @endauth
             </li>
             </ul>
