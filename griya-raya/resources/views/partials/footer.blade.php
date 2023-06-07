@@ -43,10 +43,10 @@
       <div class="row justify-content-center text-center mt-2">
         <div class="col-4">
           <ul class="list-unstyled list-inline ">
-            <li class="list-inline-item"><a href="" class="btn-floating btn-sm text-white"><i class="fab fa-facebook"></i></a></li>
-            <li class="list-inline-item"><a href="" class="btn-floating btn-sm text-white"><i class="fab fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="" class="btn-floating btn-sm text-white"><i class="fab fa-google"></i></a></li>
-            <li class="list-inline-item"><a href="" class="btn-floating btn-sm text-white"><i class="fab fa-whatsapp"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/raya.sln" class="btn-floating btn-sm text-white"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/raya_griyapengantin/" class="btn-floating btn-sm text-white"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://goo.gl/maps/iv8vmToUtGtNqJyR6" class="btn-floating btn-sm text-white"><i class="fab fa-google"></i></a></li>
+            <li class="list-inline-item"><a href="wa.me/6289664970144" class="btn-floating btn-sm text-white"><i class="fab fa-whatsapp"></i></a></li>
           </ul>
         </div>
     </div>
