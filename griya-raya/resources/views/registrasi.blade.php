@@ -28,17 +28,17 @@
                 </a>
                 <form method="POST" action="/registrasi">
                     @csrf
-                    <label for="name" class="form-label">Name</label>
+                    <label for="name" class="form-label">Nama</label>
                     <input type="text" name="name" class="form-control @error('fullname') is-invalid @enderror mb-2 "
-                        id="name" name="name" value="{{ old('name') }}" placeholder="Name">
+                        id="name" name="name" value="{{ old('name') }}" placeholder="Nama">
                     @error('name')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                     @enderror
-                    <label for="email" class="form-label">Email Address</label>
+                    <label for="email" class="form-label">Email</label>
                     <input type="email" name="email" class="form-control @error('email') is-invalid @enderror mb-2"
-                        id="email" value="{{ old('email') }}" placeholder="Email Address">
+                        id="email" value="{{ old('email') }}" placeholder="Email">
                     @error('email')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -53,11 +53,11 @@
                         {{ $message }}
                     </div>
                     @enderror
-                    <label for="password_confirmation" class="form-label">Confirmation Password </label>
+                    <label for="password_confirmation" class="form-label">Konfirmasi Password  </label>
                     <input type="password" id=""
                         class="form-control @error('password_confirmation') is-invalid @enderror"
                         name="password_confirmation" aria-describedby="passwordHelpBlock"
-                        placeholder="Confirm your password" required>
+                        placeholder="Konfirmasi Password" required>
                     @error('password_confirmation')
                     <div class="invalid-feedback">
                         {{ $message }}

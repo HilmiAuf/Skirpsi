@@ -27,9 +27,9 @@
                 </a>
                 <form action="/login" method="post">
                     @csrf
-                    <label for="email" class="form-label mb-3">Email address</label>
+                    <label for="email" class="form-label mb-3">Email</label>
                     <input type="email" class="form-control mb-3 @error('email') is-invalid @enderror" name="email"
-                        id="username" placeholder="Enter your valid username/email">
+                        id="username" placeholder="Masukan email">
                     @error('email')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -37,10 +37,10 @@
                     @enderror
                     <label for="exampleInputPassword1" class="form-label mb-3">Password</label>
                     <input type="password" id="inputPassword5" name="password" class="form-control mb-3"
-                        placeholder="Enter your password">
-                    <button type="submit" class="btn mb-3">Submit</button>
+                        placeholder="Masukan password">
+                    <button type="submit" class="btn mb-3">SUBMIT</button>
                     <p>
-                        Don't have an account yet?  <a href="/registrasi"> REGISTER HERE! </a>
+                        Belum punya akun?  <a href="/registrasi"> DAFTAR DISINI </a>
                     </p>
                 </form>
                 <img src="/source/img/Batas-layanan2.png" alt="">
