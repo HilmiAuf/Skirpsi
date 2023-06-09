@@ -25,6 +25,9 @@
                     <span class="satu fs-2">Griya</span>
                     <span class="dua fs-2">Raya</span>
                 </a>
+                @if (Session::has('loginError'))
+                <div class="alert alert-danger mt-3" role="alert">{{ Session::get('loginError') }}</div>
+                @endif
                 <form action="/login" method="post">
                     @csrf
                     <label for="email" class="form-label mb-3">Email</label>
@@ -35,19 +38,27 @@
                         {{ $message }}
                     </div>
                     @enderror
+
                     <label for="exampleInputPassword1" class="form-label mb-3">Password</label>
-                    <input type="password" id="inputPassword5" name="password" class="form-control mb-3"
+                    <input type="password" id="inputPassword5" name="password"
+                        class="form-control mb-3 @error('password') is-invalid @enderror"
                         placeholder="Masukan password">
+                    @error('password')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                    @enderror
+
                     <button type="submit" class="btn mb-3">SUBMIT</button>
                     <p>
-                        Belum punya akun?  <a href="/registrasi"> DAFTAR DISINI </a>
+                        Belum punya akun? <a href="/registrasi"> DAFTAR DISINI </a>
                     </p>
                 </form>
                 <img src="/source/img/Batas-layanan2.png" alt="">
             </div>
         </div>
     </div>
-    
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 

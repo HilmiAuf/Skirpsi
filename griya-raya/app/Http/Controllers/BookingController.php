@@ -24,20 +24,15 @@ class BookingController extends Controller
             'foto' => 'required', //maksudnya maksimal file nya 1024 kilobyte ata 1 mb
             'ringkasan' => 'required',
             'isi_paket' => 'required',
-
-            'telepon' => 'required',
-            'alamat' => 'required',
+            'telepon' => 'required|max:12|min:10',
+            'alamat' => 'required|min:10',
             'tanggal' => 'required|date|after_or_equal:today',
-            'jumlah_pengunjung' => 'required',
+            'jumlah_pengunjung' => 'required|min:10',
         ]);
 
         $validatedData['user_id'] = auth()->user()->id;
-
-       
         Booking::create($validatedData);
-
         return redirect('/')->with('success', 'New Event has Been Added');
-        
     }
 
     public function index()

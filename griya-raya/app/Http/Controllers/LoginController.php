@@ -18,7 +18,7 @@ class LoginController extends Controller
         $credentials = $request->validate([
             //'email' => 'required|email:dns', //email:dns untuk membuat semakin ketat penjagaan emailnya
             'email' => 'required|email',
-            'password' => 'required'
+            'password' => 'required|max:64|min:8'
         ]);
 
         //kalo berhasil dia akan menjalankan if ini
@@ -29,7 +29,6 @@ class LoginController extends Controller
         }
 
         return back()->with('loginError', 'Login Failed');
-       
     }
 
     public function logout()

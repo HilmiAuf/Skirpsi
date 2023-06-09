@@ -19,13 +19,37 @@
             <form action="/booking" method="POST" enctype="multipart/form-data">
                 @csrf
                 <label for="nama" class="form-label">Nomor Telephone</label>
-                <input type="tel" name="telepon" class="form-control mb-2" id="nama" required >
+                <input type="number" pattern="[0-9]+" name="telepon" class="form-control mb-2  @error('telepon') is-invalid @enderror" id="nama" required >
+                @error('telepon')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <label for="" class="form-label">Alamat</label>
-                <input type="text" name="alamat" class="form-control mb-2" id="exampleInputEmail1" required>
+                <input type="text" name="alamat" class="form-control @error('alamat') is-invalid @enderror mb-2" id="exampleInputEmail1" required>
+                @error('alamat')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <label for="" class="form-label">Tanggal</label>
-                <input type="date" name="tanggal" class="form-control mb-2" id="exampleInputPassword1" required>
+                <input type="date" name="tanggal" class="form-control  @error('tanggal') is-invalid @enderror mb-2" id="exampleInputPassword1" required>
+                @error('tanggal')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <label for="" class="form-label">Pengunjung</label>
-                <input type="number" name="jumlah_pengunjung" class="form-control mb-3" id="exampleInputPassword1" required>
+                <input type="number" pattern="[0-9]+" name="jumlah_pengunjung" class="form-control  @error('jumlah_pengunjung') is-invalid @enderror mb-2" id="exampleInputPassword1" required>
+                @error('jumlah_pengunjung')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <input type="hidden" name="category" value="{{$layanan->category}}">
                 <input type="hidden" name="judul" value="{{$layanan->judul}}">
                 <input type="hidden" name="harga" value="{{$layanan->harga}}">

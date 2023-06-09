@@ -25,7 +25,7 @@ class RegisterController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|max:255', //wajib diisi | maksimal 255
             'email' => 'required|email:dns|unique:users',
-            'password' => 'required|min:5|max:255|confirmed',
+            'password' => 'required|min:8|max:64|confirmed',
             'password_confirmation' => 'required'
 
         ]);
@@ -48,19 +48,14 @@ class RegisterController extends Controller
 
     public function update(Request $request)
     {
-       
         $request->validate([
             'name' => 'required|max:255', //wajib diisi | maksimal 255
             'email' => 'required',
         ]);
-
         auth()->user()->update([
             'name' => $request->name,
             'email' => $request->email,
         ]);
-
-        
-
         return redirect('/profile');
     }
 
@@ -78,13 +73,11 @@ class RegisterController extends Controller
             'current_password' => 'required',
             'password' => 'required|min:5|max:255|confirmed',
         ]);
-
         //jika current password  sama dengan password user sekarang
         if (Hash::check($request->current_password, auth()->user()->password)) {
             auth()->user()->update(['password' => Hash::make($request->password)]);
             return back()->with('success', 'your password has been updated');
         }
-
         throw ValidationException::withMessages([
             'current_password' => 'your current password does not match with our record',
         ]);

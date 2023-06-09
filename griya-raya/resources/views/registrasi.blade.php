@@ -28,6 +28,7 @@
                 </a>
                 <form method="POST" action="/registrasi">
                     @csrf
+
                     <label for="name" class="form-label">Nama</label>
                     <input type="text" name="name" class="form-control @error('fullname') is-invalid @enderror mb-2 "
                         id="name" name="name" value="{{ old('name') }}" placeholder="Nama">
@@ -36,6 +37,7 @@
                         {{ $message }}
                     </div>
                     @enderror
+
                     <label for="email" class="form-label">Email</label>
                     <input type="email" name="email" class="form-control @error('email') is-invalid @enderror mb-2"
                         id="email" value="{{ old('email') }}" placeholder="Email">
@@ -44,6 +46,7 @@
                         {{ $message }}
                     </div>
                     @enderror
+
                     <label for="password" class="form-label">Password</label>
                     <input type="password" name="password"
                         class="form-control @error('password') is-invalid @enderror mb-2" id="password"
@@ -52,6 +55,7 @@
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
+
                     @enderror
                     <label for="password_confirmation" class="form-label">Konfirmasi Password  </label>
                     <input type="password" id=""
@@ -63,6 +67,7 @@
                         {{ $message }}
                     </div>
                     @enderror
+
                     <button type="submit" class="btn mt-3 mb-3 "> SUBMIT </button>
                 </form>
                 <img src="/source/img/Batas-layanan2.png" alt="">
