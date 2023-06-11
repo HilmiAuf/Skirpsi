@@ -24,7 +24,7 @@ class BookingController extends Controller
             'foto' => 'required', //maksudnya maksimal file nya 1024 kilobyte ata 1 mb
             'ringkasan' => 'required',
             'isi_paket' => 'required',
-            'telepon' => 'required|max:12|min:10',
+            'telepon' => 'required|digits_between:10,12',
             'alamat' => 'required|min:10',
             'tanggal' => 'required|date|after_or_equal:today',
             'jumlah_pengunjung' => 'required|min:10',
