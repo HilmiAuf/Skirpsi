@@ -14,7 +14,7 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link " href="/admin">Home</a>
+                        <a class="nav-link " href="/admin">Beranda Admin</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="/">Beranda</a>
@@ -26,10 +26,10 @@
                         <a class="nav-link " href="/testimoni-admin">Testimoni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/user-admin"> User</a>
+                        <a class="nav-link" href="/user-admin"> Pengguna</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/book-admin"> booking</a>
+                        <a class="nav-link" href="/book-admin"> Pesanan</a>
                     </li>
                 </ul>
             </div>

@@ -7,7 +7,6 @@
                 <th scope="col">No</th>
                 <th scope="col">Nama Lengkap</th>
                 <th scope="col">Email</th>
-                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -16,7 +15,6 @@
                 <th scope="row">1</th>
                 <td>{{ $user->name}}</td>
                 <td>{{ $user->email}}</td>
-                <td><button class="btn">Admin</button></td>
             </tr>
             @endforeach
         </tbody>

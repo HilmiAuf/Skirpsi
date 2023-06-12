@@ -27,7 +27,7 @@ class BookingController extends Controller
             'telepon' => 'required|digits_between:10,12',
             'alamat' => 'required|min:10',
             'tanggal' => 'required|date|after_or_equal:today',
-            'jumlah_pengunjung' => 'required|min:10',
+            'jumlah_pengunjung' => 'required|min:1',
         ]);
 
         $validatedData['user_id'] = auth()->user()->id;
@@ -78,6 +78,6 @@ class BookingController extends Controller
             'bookings' => Booking::latest()->where('user_id', auth()->user()->id)->get(),
         ]);
     }
-    
+
 }
 

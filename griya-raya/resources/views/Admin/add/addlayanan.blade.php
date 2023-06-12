@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12  addadmin ">
             <div class="pull-left text-center">
-                <p class="fs-1"> Add Layanan </p>
+                <p class="fs-1"> Tambah Layanan </p>
             </div>
             <div class="pull-right backadmin">
-                <a class="backadmin" href="/layanan-admin"><button class="fs-10">Back</button></a>
+                <a class="backadmin" href="/layanan-admin"><button class="fs-10">Kembali</button></a>
             </div>
         </div>
     </div>
@@ -73,10 +73,9 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center submit mt-4">
-                <button type="submit">Submit</button>
+                <button class="btn" type="submit">Simpah</button>
             </div>
         </div>
-
     </form>
 </div>
 @endsection

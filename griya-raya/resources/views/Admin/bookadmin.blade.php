@@ -13,13 +13,13 @@
                 <th scope="col">Nomor HP</th>
                 <th scope="col">Alamat</th>
                 <th scope="col">Jumlah Pengunjung</th>
-                <th scope="col">Action</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
             @foreach ($bookings as $booking)
             <tr>
-                
+
 
 
                 <th scope="row">{{$loop->iteration}}</th>
@@ -35,7 +35,7 @@
                         @method('delete')
                         @csrf
                         <button class="btn delete" onclick="return confirm('are you sure?')"><span
-                                data-feather="x-circle">Delete</span></button>
+                                data-feather="x-circle">Hapus</span></button>
                     </form>
                 </td>
             </tr>

@@ -8,7 +8,7 @@
                 <th scope="col-1">NO</th>
                 <th scope="col-2">Nama</th>
                 <th scope="col-7">Testimoni</th>
-                <th scope="col-2">Action</th>
+                <th scope="col-2"></th>
             </tr>
         </thead>
         <tbody>
@@ -22,7 +22,7 @@
                         @method('delete')
                         @csrf
                         <button class="btn delete" onclick="return confirm('are you sure?')"><span
-                                data-feather="x-circle">Delete</span></button>
+                                data-feather="x-circle">Hapus</span></button>
                     </form>
                 </td>
             </tr>

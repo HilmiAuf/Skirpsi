@@ -1,8 +1,7 @@
-
 <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid  ms-5">
-        <a href="/" style="text-decoration: none;"> 
-            <span class="satu fs-2">Griya</span> 
+        <a href="/" style="text-decoration: none;">
+            <span class="satu fs-2">Griya</span>
             <span class="dua fs-2">Raya</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
