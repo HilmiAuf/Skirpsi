@@ -26,10 +26,10 @@
                 <td>{{$booking->author->name}}</td>
                 <td>{{$booking->category}}</td>
                 <td>{{$booking->judul}}</td>
-                <td>{{$booking->harga}}</td>
+                <td>Rp {{moneyFormat($booking->harga)}}</td>
                 <td>{{$booking->telepon}}</td>
                 <td>{{$booking->alamat}}</td>
-                <td>{{$booking->jumlah_pengunjung}}</td>
+                <td>{{moneyFormat($booking->jumlah_pengunjung)}}</td>
                 <td>
                     <form action="/deleteBooking/{{ $booking->id }}" method="POST" class="d-inline">
                         @method('delete')

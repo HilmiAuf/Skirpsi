@@ -10,7 +10,7 @@
     <div class="row justify-content-between paket" style="padding: 1%;">
         <div class="col-sm-12 col-md-6 col-lg-6 text-center pt-5 pb-5 paket">
             <img src="/source/img/Batas-layanan.png" alt="">
-            <p class="fs-2">Package Rp. {{ $layanan->harga}} </p>
+            <p class="fs-2">Package Rp {{ moneyFormat($layanan->harga)}} </p>
             <p > {!! $layanan->isi_paket !!}</p>
             <img src="/source/img/Batas-layanan2.png" alt="">
         </div>
@@ -19,7 +19,7 @@
             <form action="/booking" method="POST" enctype="multipart/form-data">
                 @csrf
                 <label for="nama" class="form-label">Nomor Telephone</label>
-                <input type="number" pattern="[0-9]+" name="telepon" class="form-control mb-2  @error('telepon') is-invalid @enderror" id="nama" required >
+                <input type="number" min="1" step="1" onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode<=57" pattern="[0-9]+" name="telepon" class="form-control mb-2  @error('telepon') is-invalid @enderror" id="nama" required >
                 @error('telepon')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -43,13 +43,13 @@
                 @enderror
 
                 <label for="" class="form-label">Pengunjung</label>
-                <input type="number" pattern="[0-9]+" name="jumlah_pengunjung" class="form-control  @error('jumlah_pengunjung') is-invalid @enderror mb-2" id="exampleInputPassword1" required>
+                <input type="number" min="1" step="1" onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode<=57" pattern="[0-9]+" name="jumlah_pengunjung" class="form-control  @error('jumlah_pengunjung') is-invalid @enderror mb-2" id="exampleInputPassword1" required>
                 @error('jumlah_pengunjung')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
-                @enderror  
-                
+                @enderror
+
                 <input type="hidden" name="judul" value="{{$layanan->judul}}">
                 <input type="hidden" name="harga" value="{{$layanan->harga}}">
                 <input type="hidden" name="isi_paket" value="{{$layanan->isi_paket}}">

@@ -2,7 +2,7 @@
 @section('container')
 
 <div class="container text-center pesanan" >
-    <img src="/source/img/Top-layanan1.png" alt="" style="widht:100% "> 
+    <img src="/source/img/Top-layanan1.png" alt="" style="widht:100% ">
     <div class="row" style=" min-height:53.5vh;">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-self-center table-responsive">
             <table class="table ">
@@ -23,9 +23,9 @@
                         <th scope="row">{{$loop->iteration}}</th>
                         <td>{{$booking->category}}</td>
                         <td>{{$booking->judul}}</td>
-                        <td>{{$booking->harga}}</td>
+                        <td>Rp {{moneyFormat($booking->harga)}}</td>
                         <td>{{$booking->alamat}}</td>
-                        <td>{{$booking->jumlah_pengunjung}}</td>
+                        <td>{{moneyFormat($booking->jumlah_pengunjung)}}</td>
                         <td>
                             <form action="/deleteBooking/{{ $booking->id }}" method="POST" class="d-inline">
                                 @method('delete')
@@ -41,4 +41,5 @@
     </div>
     <img src="/source/img/Top-layanan2.png" alt="">
 </div>
+
 @endsection

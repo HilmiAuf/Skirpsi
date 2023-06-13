@@ -22,7 +22,7 @@
                     <th scope="row">{{$loop->iteration}}</th>
                     <td>{{ $layanan->category}}</td>
                     <td>{{$layanan->judul}}</td>
-                    <td>{{ $layanan->harga}}</td>
+                    <td>Rp {{moneyFormat($layanan->harga)}}</td>
                     <td>
                         <form action="/deleteLayanan/{{ $layanan->id }}" method="POST" class="d-inline">
                             @method('delete')
