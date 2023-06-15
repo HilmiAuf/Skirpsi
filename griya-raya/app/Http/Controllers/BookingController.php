@@ -32,7 +32,7 @@ class BookingController extends Controller
 
         $validatedData['user_id'] = auth()->user()->id;
         Booking::create($validatedData);
-        return redirect('/')->with('success', 'New Event has Been Added');
+        return redirect('/pesanan')->with('success', 'New Event has Been Added');
     }
 
     public function index()

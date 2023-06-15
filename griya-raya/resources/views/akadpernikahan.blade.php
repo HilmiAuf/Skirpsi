@@ -1,7 +1,7 @@
 @extends('layout.main') {{-- ini memanggil file main yang di dalam layout --}}
 @section('container')
 <div class="container mt-5 layanan" style="width: 100%; height: 100%; min-height:69.2vh;">
-    <img src="/source/img/Top-layanan1.png" alt="">
+    <img data-aos="zoom-in-up" src="/source/img/Top-layanan1.png" alt="">
     <div class="row ">
         @foreach ($layanans as $layanan)
         <div data-aos="fade-up" data-aos-duration="3000"
@@ -21,6 +21,6 @@
         </div>
         @endforeach
     </div>
-    <img src="/source/img/Top-layanan2.png" alt="">
+    <img data-aos="zoom-in-up" src="/source/img/Top-layanan2.png" alt="">
 </div>
 @endsection

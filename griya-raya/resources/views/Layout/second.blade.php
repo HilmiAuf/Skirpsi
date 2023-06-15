@@ -13,8 +13,9 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="{{asset('source/css/admin/admin.css')}}">
     <link rel="stylesheet" href="{{asset('source/css/admin/addlayanan.css')}}">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.0/css/all.min.css">
+    <link rel="icon" href="/source/img/Griya Raya.png" type="image/x-icon">
+    <title>Griya Raya</title>
 </head>
 
 <body>

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg ">
+<nav  class="navbar navbar-expand-lg" >
     <div class="container-fluid  ms-5">
         <a href="/" style="text-decoration: none;">
             <span class="satu fs-2">Griya</span>

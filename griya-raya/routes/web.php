@@ -95,6 +95,7 @@ Route::get('/layanan', function () {
 
     //admin
     Route::get('/user-admin', [RegisterController::class, 'getUser'])->middleware('authadmin');
+    Route::put('/user-admin/{user:id}', [RegisterController::class, 'addAdmin'])->middleware('authadmin');
     Route::get('/layanan-admin', [LayananController::class, 'showAdmin']);
     Route::get('/editLayanan/{layanan:id}', [LayananController::class, 'edit']);
     Route::put('/editLayanan/{layanan:id}', [LayananController::class, 'update']);
@@ -129,4 +130,3 @@ Route::get('/layanan', function () {
     // });
 
 
-   

@@ -19,9 +19,6 @@
         <tbody>
             @foreach ($bookings as $booking)
             <tr>
-
-
-
                 <th scope="row">{{$loop->iteration}}</th>
                 <td>{{$booking->author->name}}</td>
                 <td>{{$booking->category}}</td>
@@ -34,8 +31,8 @@
                     <form action="/deleteBooking/{{ $booking->id }}" method="POST" class="d-inline">
                         @method('delete')
                         @csrf
-                        <button class="btn delete" onclick="return confirm('are you sure?')"><span
-                                data-feather="x-circle">Hapus</span></button>
+                        <button class="btn delete" onclick="return confirm('Apakah Kamu Yakin?')"><span
+                                data-feather="x-circle"><i class="fas fa-trash-alt"></i></span></button>
                     </form>
                 </td>
             </tr>

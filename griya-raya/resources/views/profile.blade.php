@@ -1,7 +1,7 @@
 @extends('layout.main') {{-- ini memanggil file main yang di dalam layout --}}
 @section('container')
 
-<div class="container profile-user" >
+<div data-aos="fade-up" data-aos-duration="3000" class="container profile-user" >
     <div class="row" style=" min-height:69.2vh;">
         <div class="col align-self-center">
             <div class="row ">

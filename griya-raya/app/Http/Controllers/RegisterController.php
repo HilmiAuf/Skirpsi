@@ -83,5 +83,20 @@ class RegisterController extends Controller
         ]);
     }
 
+    public function addAdmin($user_id)
+    {
+        $user = User::find($user_id);
+        // jika user tipenya "USR" maka jalankan if ini untuk mengubah jadi admin
+        if ($user->utype == "USR") {
+            $user->utype = 'ADM';
+            $user->save();
+            return back()->with('message', 'admin berhasil ditambahkan');
+        } else {
+            $user->utype = 'USR';
+            $user->save();
+            return back()->with('message', 'admin berhasil ditambahkan');
+        }
+    }
+
 
 }

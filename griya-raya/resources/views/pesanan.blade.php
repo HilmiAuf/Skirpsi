@@ -2,8 +2,8 @@
 @section('container')
 
 <div class="container text-center pesanan" >
-    <img src="/source/img/Top-layanan1.png" alt="" style="widht:100% ">
-    <div class="row" style=" min-height:53.5vh;">
+    <img data-aos="zoom-in-up" src="/source/img/Top-layanan1.png" alt="" style="widht:100% ">
+    <div data-aos="fade-up" data-aos-duration="3000" class="row" style=" min-height:53.5vh;">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-self-center table-responsive">
             <table class="table ">
                 <thead>
@@ -39,7 +39,7 @@
             </table>
         </div>
     </div>
-    <img src="/source/img/Top-layanan2.png" alt="">
+    <img data-aos="zoom-in-up" src="/source/img/Top-layanan2.png" alt="">
 </div>
 
 @endsection

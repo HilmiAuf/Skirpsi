@@ -1,20 +1,20 @@
 @extends('layout.main') {{-- ini memanggil file main yang di dalam layout --}}
 @section('container')
 <div class="container layanan-user">
-    <img src="/source/img/Top-layanan1.png" alt="">
+    <img data-aos="zoom-in-up"  src="/source/img/Top-layanan1.png" alt="">
     <div class="row justify-content-center up">
-        <div class="col-12">
-            <img src="{{ asset('storage/' . $layanan->foto) }}" alt="">
+        <div  class="col-12">
+            <img data-aos="fade-up" data-aos-duration="3000" src="{{ asset('storage/' . $layanan->foto) }}" alt="">
         </div>
     </div>
-    <div class="row justify-content-between paket" style="padding: 1%;">
+    <div data-aos="fade-up" data-aos-duration="3000" class="row justify-content-between paket" style="padding: 1%;">
         <div class="col-sm-12 col-md-6 col-lg-6 text-center pt-5 pb-5">
             <img src="/source/img/Batas-layanan.png" alt="">
             <p class="fs-2 judul-layanan">Paket Rp {{ moneyFormat($layanan->harga)}} </p>
             <p > {!! $layanan->isi_paket !!}</p>
             <img src="/source/img/Batas-layanan2.png" alt="">
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 isi-paket align-self-center" style="height: 90% ; ">
+        <div  class="col-sm-12 col-md-6 col-lg-4 isi-paket align-self-center" style="height: 90% ; ">
             <img src="/source/img/Batas-layanan.png" alt="">
             <form action="/booking" method="POST" enctype="multipart/form-data">
                 @csrf
@@ -61,6 +61,6 @@
             <img src="/source/img/Batas-layanan2.png" alt="">
         </div>
     </div>
-    <img src="/source/img/Top-layanan2.png" alt="" >
+    <img data-aos="zoom-in-up" src="/source/img/Top-layanan2.png" alt="" >
 </div>
 @endsection

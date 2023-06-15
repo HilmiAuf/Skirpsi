@@ -13,7 +13,7 @@
 
     <!-- Style Css -->
     <link rel="stylesheet" href="{{asset('source/css/login.css')}}">
-    <title>Hello, world!</title>
+    <title>Griya Raya</title>
 </head>
 
 <body>

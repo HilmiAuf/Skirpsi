@@ -2,7 +2,7 @@
 @section('container')
 
 <div class="container text-center halaman-about">
-    <img src="/source/img/Top-layanan1.png" alt="">
+    <img data-aos="zoom-in-up" src="/source/img/Top-layanan1.png" alt="">
     <div class="row align-items-start justify-content-center mb-3">
         <div class="col-lg-8 col-sm-12 col-md-12 " data-aos="fade-up" data-aos-duration="3000">
             <p class="fs-1">Tentang Kami</p>
@@ -40,7 +40,7 @@
             <img style="border-radius:10px;" src="/source/img/misi.png" alt="">
         </div>
     </div>
-    <img src="/source/img/Top-layanan2.png" alt="">
+    <img data-aos="zoom-in-up" src="/source/img/Top-layanan2.png" alt="">
 </div>
 
 @endsection

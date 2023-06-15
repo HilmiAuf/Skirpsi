@@ -1,10 +1,10 @@
 
 html,
     body {
-      position: relative;
-      height: 100%;
-      padding: 0;
-      margin: 0;
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     }
 
     body {
@@ -65,8 +65,7 @@ div .kontak img {
 .about .isi button {
     background-color:#F7C873 ;
     color: #000000;
-    border-color: black;
-    font-weight: bold;
+    font-family: Scheherazad;
     transition-duration: 0.4s;
     width: 50%;
     cursor: pointer;
@@ -108,7 +107,6 @@ div .kontak img {
     font-weight: bold;
     cursor: pointer;
     transition-duration: 0.4s;
-    width: 10%;
     cursor: pointer;
 }
 .testimoni button:hover {
@@ -176,7 +174,7 @@ div .kontak img {
 }
 
 .halaman-about .fs-6{
-    text-align: justify;    
+    text-align: justify;
 }
 
 

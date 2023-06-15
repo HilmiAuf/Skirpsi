@@ -22,7 +22,7 @@
                         @method('delete')
                         @csrf
                         <button class="btn delete" onclick="return confirm('are you sure?')"><span
-                                data-feather="x-circle">Hapus</span></button>
+                                data-feather="x-circle"><i class="fas fa-trash-alt"></i></span></button>
                     </form>
                 </td>
             </tr>
@@ -31,5 +31,4 @@
         </tbody>
     </table>
 </div>
-
 @endsection
