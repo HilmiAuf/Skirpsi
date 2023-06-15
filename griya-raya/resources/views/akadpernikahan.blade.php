@@ -12,9 +12,9 @@
             </div>
                 <div class="card-body text-center">
                     <img src="/source/img/Batas-layanan.png" alt="">
-                    <p class="card-title fs-3">{{ $layanan->judul}}</p>
+                    <p class="card-title fs-3" style="font-family: Scheherazade;">{{ $layanan->judul}}</p>
                     <p class="card-text">{{$layanan->ringkasan }}</p>
-                    <a href="/akadpernikahan/{{ $layanan->id }}" class="btn">Lihat Detail</a>
+                    <a href="/akadpernikahan/{{ $layanan->id }}" class="btn fw-bold">Lihat Detail dan Pesan</a>
                     <img src="/source/img/Batas-layanan2.png" alt="">
                 </div>
             </div>
