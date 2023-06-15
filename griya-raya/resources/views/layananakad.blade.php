@@ -50,12 +50,13 @@
                     </div>
                 @enderror
 
+                <input type="hidden" name="category" value="{{$layanan->category}}">
                 <input type="hidden" name="judul" value="{{$layanan->judul}}">
                 <input type="hidden" name="harga" value="{{$layanan->harga}}">
                 <input type="hidden" name="isi_paket" value="{{$layanan->isi_paket}}">
                 <input type="hidden" name="foto" value="{{$layanan->foto}}">
                 <input type="hidden" name="ringkasan" value="{{$layanan->ringkasan}}">
-                <button type="submit" class="mb-2">BOOK NOW ! </button>
+                <button type="submit" class="mb-2">Pesan Sekarang ! </button>
             </form>
             <img src="/source/img/Batas-layanan2.png" alt="">
         </div>

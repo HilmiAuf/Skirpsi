@@ -30,7 +30,7 @@
                             <form action="/deleteBooking/{{ $booking->id }}" method="POST" class="d-inline">
                                 @method('delete')
                                 @csrf
-                                <button class="delete" onclick="return confirm('are you sure?')"><i class="fas fa-trash-alt"></i></button>
+                                <button class="delete" onclick="return confirm('Apakah Kamu Yakin?')"><i class="fas fa-trash-alt"></i></button>
                             </form>
                         </td>
                     </tr>

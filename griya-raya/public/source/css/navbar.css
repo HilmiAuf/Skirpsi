@@ -6,7 +6,7 @@
 }
 .navbar .satu {
     color: #F7C873;
-    
+
 }
 
 .navbar .dua {
@@ -19,7 +19,7 @@
 }
 
 footer {
-    background-image: url('/source/img/footer.png');
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -36,7 +36,7 @@ footer ul li {
 }
 footer .satu {
     color: #F7C873;
-    
+
 }
 
 footer .dua {
