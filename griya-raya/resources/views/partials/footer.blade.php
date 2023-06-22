@@ -1,7 +1,7 @@
 <footer class=" text-white footer-bs mt-5">
     <div class="container pt-5 ">
         <div class="row ">
-            <div class="col-sm-12 col-md-6 col-lg-4 footer align-self-center">
+            <div class="col-sm-12 col-md-6 col-lg-3 footer align-self-center">
                 <a href="/" style="text-decoration: none;">
                     <span class="satu fs-2">Griya</span>
                     <span class="dua fs-2">Raya</span>
@@ -30,26 +30,8 @@
                         <li><a class="nav-link fs-6 me-4" href="/kontak">Profil</a></li>
                     </div>
                 </div>
-                {{-- <ul class="list-unstyled list-inline ">
-                    <p class="fs-4">Menu </p>
-                    <li><a class="nav-link fs-6 me-4" href="/">Beranda</a></li>
-                    <li><a class="nav-link fs-6 me-4" href="/about">Tentang Kami</a></li>
-                    <li><a class="nav-link fs-6 me-4 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Layanan
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-center">
-                            <li><a class="dropdown-item" href="/pernikahan">Pernikahan</a></li>
-                            <li><a class="dropdown-item" href="/akadpernikahan">Akad Nikah</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-link fs-6 me-4" href="/testimoni">Testimoni</a></li>
-                    <li><a class="nav-link fs-6 me-4" href="/pesanan">Pesanan</a></li>
-                    <li><a class="nav-link fs-6 me-4" href="/kontak">Kontak</a></li>
-                    <li><a class="nav-link fs-6 me-4" href="/kontak">Profil</a></li>
-                </ul> --}}
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-5">
                 <ul class="list-unstyled list-inline ">
                     <p class="fs-4">Kontak Kami</p>
                     <li><i class="text-white fas fa-envelope me-1"></i> Email : rayatiyati00@gmail.com </li>
