@@ -17,7 +17,7 @@
         </div>
     </div>
 </div>
-<div data-aos="fade-up" data-aos-duration="3000" class="last justify-content-center text-center mt-4">
+<div data-aos="fade-up" data-aos-duration="1000" class="last justify-content-center text-center mt-4">
     <img class="mb-3 mt-5 " src="/source/img/mid.png" alt="">
 </div>
 <div class="container mt-5 mb-3">
