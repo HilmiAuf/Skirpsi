@@ -7,12 +7,12 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-self-center table-responsive">
             <table class="table ">
                 <thead>
-                    <tr>
+                    <tr class="table-dark">
                         <th scope="col">No</th>
                         <th scope="col">Layanan</th>
                         <th scope="col">Paket</th>
                         <th scope="col">Harga</th>
-                        <th scope="col">alamat</th>
+                        <th scope="col">Alamat</th>
                         <th scope="col">Pengunjung</th>
                         <th scope="col"></th>
                     </tr>

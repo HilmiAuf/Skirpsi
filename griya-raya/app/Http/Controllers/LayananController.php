@@ -50,7 +50,7 @@ class LayananController extends Controller
 
         Layanan::create($validatedData);
 
-        return redirect('/')->with('success', 'New Event has Been Added');
+        return redirect('/layanan-admin')->with('success', 'New Event has Been Added');
     }
 
     public function getPernikahan()

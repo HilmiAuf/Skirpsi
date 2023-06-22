@@ -3,12 +3,12 @@
 <div class="container layanan-user ">
     <img data-aos="zoom-in-up" src="/source/img/Top-layanan1.png" alt="">
     <div class="row justify-content-center up">
-        <div class="col-12">
+        <div class="col-12 mt-4">
             <img data-aos="fade-up" data-aos-duration="3000" src="{{ asset('storage/' . $layanan->foto) }}" alt="">
         </div>
     </div>
     <div data-aos="fade-up" data-aos-duration="3000" class="row justify-content-between paket" style="padding: 1%;">
-        <div class="col-sm-12 col-md-6 col-lg-6 text-center pt-5 pb-5 paket">
+        <div class="col-sm-12 col-md-6 col-lg-6 text-center pt-3 pb-3 paket">
             <img src="/source/img/Batas-layanan.png" alt="">
             <p class="fs-2">Package Rp {{ moneyFormat($layanan->harga)}} </p>
             <p > {!! $layanan->isi_paket !!}</p>

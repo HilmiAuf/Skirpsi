@@ -95,20 +95,32 @@
             <img style="border-radius:10px;" src="/source/img/callcenter1.png" alt="">
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6  " style="margin-top:auto; margin-bottom:auto;" data-aos="zoom-in-down">
-            <p class="fs-4">Konsultasi</p>
-            <p class="isi fs-6" style="font-weight: normal"> Konsultasi sebelum hari pernikahan untuk kelancaran acara. Hubungi Kami di bawah ini!
+            <p class="Kontak fs-3 fw-bold">Konsultasi</p>
+            <p class="isi fs-6" style="font-weight: normal; text-align: justify;">
+                Perusahaan wedding organizer kami siap menerima konsultasi 24/7. Kami mengerti pentingnya persiapan pernikahan dan berkomitmen memberikan pelayanan terbaik. Tim kami tersedia untuk menjawab pertanyaan, memberikan saran, dan membantu merencanakan pernikahan impian Anda. Hubungi kami kapan saja, kami siap membantu dalam perjalanan menuju pernikahan yang sempurna.
         </div>
     </div>
-    <div class="row ">
+    <div class="row kontak">
         <div class="col-sm-12 col-md-12 col-lg-6 order-2 order-sm-1 order-md-2 order-lg-1 "
             style="margin-top:auto; margin-bottom:auto;" data-aos="zoom-in-down">
-            <p class="fs-4">Kontak Kami</p>
+            <p class="Kontak fs-3 fw-bold">Kontak Kami</p>
             <ul class="list-unstyled list-inline">
                 <li>Alamat : Jl. Cideng Raya Blok Pecilon Kidul Gg. Syeh
                     Hambari</li>
                 <li>Email : rayatiyati00@gmail.com </li>
-                <li>Nomor Telphone : 085222160047 </li>
+                <li>Nomor Telepon : 085222160047 </li>
                 <li>WhatsApp : 089664970144 </li>
+            </ul>
+            <p class="fs-3 fw-bold">Sosial Media </p>
+            <ul class="list-unstyled list-inline ">
+                <li class="list-inline-item "><a href="https://www.facebook.com/raya.sln"
+                        class="btn-floating btn-sm fa-lg text-black me-3"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item "><a href="https://www.instagram.com/raya_griyapengantin/"
+                        class="btn-floating btn-sm fa-lg text-black me-3"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item "><a href="https://goo.gl/maps/QxQCJGme8Zrptjzg9"
+                        class="btn-floating btn-sm fa-lg text-black me-3"><i class="fab fa-google"></i></a></li>
+                <li class="list-inline-item"><a href="https://api.whatsapp.com/send/?phone=6289664970144&text&type=phone_number&app_absent=0"
+                        class="btn-floating btn-sm fa-lg text-black"><i class="fab fa-whatsapp"></i></a></li>
             </ul>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 order-1 order-md-1 order-lg-2 order-sm-2 kontak" data-aos="zoom-in-down">

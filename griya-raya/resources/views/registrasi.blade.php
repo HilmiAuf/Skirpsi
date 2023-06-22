@@ -13,6 +13,8 @@
 
     <!-- Style Css -->
     <link rel="stylesheet" href="{{asset('source/css/login.css')}}">
+
+    <link rel="icon" href="/source/img/Griya Raya.png" type="image/x-icon">
     <title>Griya Raya</title>
 </head>
 

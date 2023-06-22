@@ -7,7 +7,7 @@
     <div class="row">
 
         @auth
-        <a href="add-testimoni"> <button class="btn btn-lg" style="float : right;">Tambah</button></a>
+        <a href="add-testimoni"> <button class="btn btn-lg mt-4" style="float : right;">+ Testimoni</button></a>
         @endauth
 
         @foreach ($testimonis as $testimoni)
@@ -19,10 +19,8 @@
                     <img style="border-radius:10px;" src="{{ asset('storage/' . $testimoni->foto) }}" class="" alt="...">
                 </div>
                 <div class="card-body ">
-
-                    <p class="fs-6 text-center">{{$testimoni->isi_testimoni }}</p>
-                    <p class="fs-6">"{{ $testimoni->name}}"<p>
-
+                    <p class="fs-6 fw-bold">{{ $testimoni->name}}<p>
+                    <p class="fs-6" style="text-align: justify;">"{{$testimoni->isi_testimoni}}"</p>
                 </div>
                 <div class="card-footer">
                     <img src="/source/img/Batas-layanan2.png" alt="">

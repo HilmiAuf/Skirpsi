@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light bg-light "  >
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">Admin</a>
+        <a class="navbar-brand" href="/admin">Admin</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,7 @@
                         <a class="nav-link " href="/admin">Beranda Admin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="/">Beranda</a>
+                        <a class="nav-link " href="/">Beranda User</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="/layanan-admin">Layanan</a>
@@ -26,10 +26,16 @@
                         <a class="nav-link " href="/testimoni-admin">Testimoni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/user-admin"> Pengguna</a>
+                        <a class="nav-link" href="/book-admin"> Pesanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/book-admin"> Pesanan</a>
+                        <a class="nav-link" href="/user-admin"> Pengguna</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <form action="/logout" method="post">
+                            @csrf
+                            <button type="submit" class="btn btn-danger  btn-logout fs-6"><i class="bi bi-door-open"></i>Keluar</button>
+                        </form>
                     </li>
                 </ul>
             </div>

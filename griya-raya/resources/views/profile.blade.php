@@ -3,23 +3,23 @@
 
 <div data-aos="fade-up" data-aos-duration="3000" class="container profile-user" >
     <div class="row" style=" min-height:69.2vh;">
-        <div class="col align-self-center">
+        <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
             <div class="row ">
                 <img src="/source/img/Batas-layanan.png" alt="">
                 <p class="fs-1 text-center">PROFIL ANDA</p>
-                <div class="col-9 align-self-center">
-                    <p class="fs-3">Nama</p>
-                    <p>"{{ auth()->user()->name }}"</p>
-                    <p class="fs-3">Email</p>
-                    <p>{{ auth()->user()->email }}</p>
+                <div class="col-7 align-self-center ps-5">
+                    <p class="fs-5">Nama</p>
+                    <p class="fs-3 fw-bold">{{ auth()->user()->name }}</p>
+                    <p class="fs-5">Email</p>
+                    <p class="fs-3 fw-bold">{{ auth()->user()->email }}</p>
                 </div>
-                <div class="col-3">
-                    <a href="/edit-profile"><i class="fas fa-edit text-black"> Edit</i></a>
+                <div class="col-3"  ">
+                    <a href="/edit-profile"><i class="fas fa-edit text-black">Edit</i></a>
                 </div>
                 <img src="/source/img/Batas-layanan2.png" alt="">
             </div>
         </div>
-        <div class="col  align-self-center">
+        <div class="col-lg-6 col-md-12 col-sm-12  align-self-center">
             <div class="row ">
                 <img src="/source/img/Batas-layanan.png" alt="">
                 <p class="fs-1 text-center">GANTI PASSWORD</p>

@@ -4,7 +4,7 @@
 <div class="container text-center halaman-about">
     <img data-aos="zoom-in-up" src="/source/img/Top-layanan1.png" alt="">
     <div class="row align-items-start justify-content-center mb-3">
-        <div class="col-lg-8 col-sm-12 col-md-12 " data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-lg-8 col-sm-12 col-md-12 " data-aos="fade-up" data-aos-duration="1000">
             <p class="fs-1">Tentang Kami</p>
             <p class="fs-6">Di Griya Raya, kami adalah mitra terpercaya dalam menciptakan pengalaman pernikahan yang luar biasa dan inspiratif. Dengan layanan perencanaan pernikahan yang profesional dan personal, kami berusaha untuk mewujudkan visi unik masing-masing pasangan, memastikan eksekusi tanpa cela dan kenangan abadi. Sebagai wedding organizer terkemuka, kami telah menjalin hubungan yang kuat dengan vendor terbaik di industri ini, memastikan kualitas tertinggi dan kesempurnaan yang dikuratori dalam setiap detail. Kami tetap up-to-date dengan tren dan inovasi terbaru dalam industri pernikahan, mengintegrasikannya dengan mulus ke dalam setiap acara yang kami selenggarakan. Dengan komitmen terhadap keberlanjutan, kami menawarkan pilihan yang bertanggung jawab secara sosial dan lingkungan, membantu pasangan merencanakan pernikahan yang indah dan ramah lingkungan.</p>
         </div>
