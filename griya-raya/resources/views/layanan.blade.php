@@ -22,7 +22,7 @@
                 <input type="number" min="1" step="1" onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode<=57" pattern="[0-9]+" name="telepon" class="form-control mb-2  @error('telepon') is-invalid @enderror" id="nama" required >
                 @error('telepon')
                     <div class="invalid-feedback">
-                        {{ $message }}
+                        Nomor telepon harus terdiri dari minimal 10 dan maksimal 12 angkat.
                     </div>
                 @enderror
 
@@ -30,7 +30,7 @@
                 <input type="text" name="alamat" class="form-control @error('alamat') is-invalid @enderror mb-2" id="exampleInputEmail1" required>
                 @error('alamat')
                     <div class="invalid-feedback">
-                        {{ $message }}
+                        Alamat harus terdiri dari minimal 2 kata atau 10 Huruf!
                     </div>
                 @enderror
 
@@ -38,15 +38,15 @@
                 <input type="date" name="tanggal" class="form-control  @error('tanggal') is-invalid @enderror mb-2" id="exampleInputPassword1" required>
                 @error('tanggal')
                     <div class="invalid-feedback">
-                        {{ $message }}
+                        Pemesanan layanan minimal hari ini!
                     </div>
                 @enderror
 
-                <label for="" class="form-label">Pengunjung</label>
+                <label for="" class="form-label">Jumlah Pengunjung</label>
                 <input type="number" min="1" step="1" onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode<=57" pattern="[0-9]+" name="jumlah_pengunjung" class="form-control  @error('jumlah_pengunjung') is-invalid @enderror mb-2" id="exampleInputPassword1" required>
                 @error('jumlah_pengunjung')
                     <div class="invalid-feedback">
-                        {{ $message }}
+                        Jumlah pengunjung harus terdiri dari minimal 1 orang!
                     </div>
                 @enderror
 

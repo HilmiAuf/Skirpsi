@@ -28,7 +28,7 @@
                 </div>
                 <div class="card-footer">
                     <img src="/source/img/Batas-layanan2.png" alt="">
-                  </div>
+                </div>
             </div>
         </div>
         @endforeach

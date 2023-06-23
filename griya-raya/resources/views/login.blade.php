@@ -32,26 +32,26 @@
                 @endif
                 <form action="/login" method="post">
                     @csrf
-                    <label for="email" class="form-label mb-3">Email</label>
+                    <label for="email" class="form-label fs-6 mb-3 mt-3">Email</label>
                     <input type="email" class="form-control mb-3 @error('email') is-invalid @enderror" name="email"
-                        id="username" placeholder="Masukan email">
+                        id="username" placeholder="Masukan Email">
                     @error('email')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                     @enderror
 
-                    <label for="exampleInputPassword1" class="form-label mb-3">Password</label>
+                    <label for="exampleInputPassword1" class="form-label mb-3 fs-6">Password</label>
                     <input type="password" id="inputPassword5" name="password"
                         class="form-control mb-3 @error('password') is-invalid @enderror"
-                        placeholder="Masukan password">
+                        placeholder="Masukan Password">
                     @error('password')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                     @enderror
 
-                    <button type="submit" class="btn mb-3">SUBMIT</button>
+                    <button type="submit" class="btn mb-3 mt-3">SUBMIT</button>
                     <p>
                         Belum punya akun? <a href="/registrasi"> DAFTAR DISINI </a>
                     </p>

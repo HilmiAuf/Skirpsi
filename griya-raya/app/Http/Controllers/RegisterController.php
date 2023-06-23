@@ -76,7 +76,7 @@ class RegisterController extends Controller
         //jika current password  sama dengan password user sekarang
         if (Hash::check($request->current_password, auth()->user()->password)) {
             auth()->user()->update(['password' => Hash::make($request->password)]);
-            return back()->with('success', 'your password has been updated');
+            return back()->with('success', 'Berhasil mengganti password');
         }
         throw ValidationException::withMessages([
             'current_password' => 'your current password does not match with our record',

@@ -1,10 +1,13 @@
 @extends('layout.main') {{-- ini memanggil file main yang di dalam layout --}}
 @section('container')
 
-<div class="container text-center pesanan" >
+<div class="container text-center pesanan">
     <img data-aos="zoom-in-up" src="/source/img/Top-layanan1.png" alt="" style="widht:100% ">
     <div data-aos="fade-up" data-aos-duration="3000" class="row" style=" min-height:53.5vh;">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-self-center table-responsive">
+            @if($bookings->isEmpty())
+            <h3 class="text-center">Belum Ada Pesanan ^-^</h3>
+            @else
             <table class="table ">
                 <thead>
                     <tr class="table-dark">
@@ -30,13 +33,15 @@
                             <form action="/deleteBooking/{{ $booking->id }}" method="POST" class="d-inline">
                                 @method('delete')
                                 @csrf
-                                <button class="delete" onclick="return confirm('Apakah Kamu Yakin?')"><i class="fas fa-trash-alt"></i></button>
+                                <button class="delete" onclick="return confirm('Apakah Kamu Yakin?')"><i
+                                        class="fas fa-trash-alt"></i></button>
                             </form>
                         </td>
                     </tr>
                     @endforeach
                 </tbody>
             </table>
+            @endif
         </div>
     </div>
     <img data-aos="zoom-in-up" src="/source/img/Top-layanan2.png" alt="">
