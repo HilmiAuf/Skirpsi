@@ -27,6 +27,7 @@
                     <p class="fs-6" style="text-align: justify;">"{{$testimoni->isi_testimoni}}"</p>
                 </div>
                 <div class="card-footer">
+                    <p>{{ $testimoni->created_at }}</p>
                     <img src="/source/img/Batas-layanan2.png" alt="">
                 </div>
             </div>

@@ -52,16 +52,6 @@
     </form>
 </div> --}}
 <div class="container  testimoni-user">
-    @if ($errors->any())
-                <div class="alert alert-danger">
-                    <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-                @endif
     <div class="row align-items-start justify-content-center">
         <div class="col-6">
             <img src="/source/img/Batas-layanan.png" alt="">
@@ -76,10 +66,21 @@
                 @csrf
                 <input type="hidden" name="name" value=" {{ auth()->user()->name }}">
                 <p class="fs-3">Nama: {{ auth()->user()->name }}</p>
-                <p class="fs-3">Poto:</p>
-                <input type="file" name="foto" class="form-control" placeholder="foto">
-                <p class="fs-3">Testimoi:</p>
-                    <input type="text" name="isi_testimoni" class="form-control" placeholder="Kesan">
+                <p class="fs-3">Foto:</p>
+                <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror" placeholder="foto">
+                @error('foto')
+                <div class="invalid-feedback">
+                Harap diisi Maksimal 5 Mb
+                </div>
+            @enderror
+
+                <p class="fs-3">Testimoni:</p>
+                    <input type="text" name="isi_testimoni" class="form-control @error('isi_testimoni') is-invalid @enderror" placeholder="Kesan">
+                    @error('isi_testimoni')
+                    <div class="invalid-feedback">
+                        Harap disi
+                    </div>
+                @enderror
                 <button class="btn mt-3" type="submit">Kirim</button>
             </form>
             <img src="/source/img/Batas-layanan2.png" alt="">

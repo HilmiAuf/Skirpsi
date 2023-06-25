@@ -14,7 +14,7 @@
                     <img src="/source/img/Batas-layanan.png" alt="">
                     <p class="card-title fs-3" style="font-family: Scheherazade;">{{ $layanan->judul}}</p>
                     <p class="card-text fw-bold">{{$layanan->ringkasan }}</p>
-                    <a href="/akadpernikahan/{{ $layanan->id }}" class="btn fw-bold">Lihat Detail dan Pesan</a>
+                    <a href="/akadpernikahan/{{ $layanan->id }}" class="btn btn-outline-dark fw-bold">Lihat Detail dan Pesan</a>
                     <img src="/source/img/Batas-layanan2.png" alt="">
                 </div>
             </div>
