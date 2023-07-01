@@ -20,26 +20,10 @@ class TestimoniController extends Controller
             'foto' => 'image|file|max:5024|required', //maksudnya maksimal file nya 1024 kilobyte ata 1 mb
         ]);
 
-        // //logika untuk multi checkbox agar bentuk nya string berkoma
-        // if (!empty($request->input('eventTheme'))) {
-        //     $validatedData['eventTheme'] = join(',', $request->input('eventTheme'));
-        // } else {
-        //     $validatedData['eventTheme'] = '';
-        // }
-
-        //logika untuk mulit checkbox untuk masukin ke database dalam bentuk array
-        //$validatedData['eventTheme'] = serialize($request['eventTheme']);
-
-        //  ddd($validatedData);
         //jika ada gambar yang di upload
         if ($request->file('foto')) {
             $validatedData['foto'] = $request->file('foto')->store('foto'); //maka simpan di dalam storage/app/foto
         }
-
-
-        //dd($validatedData);
-
-
 
         Testimoni::create($validatedData);
 

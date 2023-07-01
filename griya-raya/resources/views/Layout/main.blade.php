@@ -26,7 +26,6 @@
 
     {{-- Aos Animaniton --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 <link rel="icon" href="/source/img/Griya Raya.png" type="image/x-icon">
     <title>Griya Raya</title>
 </head>

@@ -17,13 +17,10 @@ class AuthAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-
-          //pengecekan manual, jika user belum login(guest) maka gabisa akses categories, atau user bukan alghaz juga gabisa
+          //pengecekan manual, jika user belum login(guest) maka gabisa akses categories, atau user bukan hilmi juga gabisa
           if (auth()->guest() || Auth::user()->utype === 'USR') {
             abort(403);
         }
-
         return $next($request);
-    
     }
 }

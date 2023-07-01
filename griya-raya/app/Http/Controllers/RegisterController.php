@@ -20,7 +20,6 @@ class RegisterController extends Controller
 
     public function store(Request $request)
     {
-
         // mengvalidasi data nya agar ga ngasal
         $validatedData = $request->validate([
             'name' => 'required|max:255', //wajib diisi | maksimal 255
@@ -59,7 +58,6 @@ class RegisterController extends Controller
         return redirect('/profile');
     }
 
-
     public function getUser()
     {
         return view('Admin.useradmin', [
@@ -71,7 +69,7 @@ class RegisterController extends Controller
     {
         $request->validate([
             'current_password' => 'required',
-            'password' => 'required|min:5|max:255|confirmed',
+            'password' => 'required|min:8|max:64|confirmed',
         ]);
         //jika current password  sama dengan password user sekarang
         if (Hash::check($request->current_password, auth()->user()->password)) {
@@ -97,6 +95,5 @@ class RegisterController extends Controller
             return back()->with('message', 'admin berhasil ditambahkan');
         }
     }
-
 
 }

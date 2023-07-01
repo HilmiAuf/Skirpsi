@@ -37,7 +37,7 @@
                             placeholder="Password Lama">
                             @error('current_password')
                             <div class="invalid-feedback">
-                                Password Tidak Cocok!
+                                Password Salah!
                             </div>
                             @enderror
 

@@ -21,32 +21,14 @@ class LayananController extends Controller
             'judul' => 'required|max:255',
             'category' => 'required',
             'harga' => 'required',
-            // 'slug' => 'required|unique:posts',
             'foto' => 'image|file|max:5024|required', //maksudnya maksimal file nya 1024 kilobyte ata 1 mb
             'ringkasan' => 'required',
             'isi_paket' => 'required',
         ]);
 
-        // //logika untuk multi checkbox agar bentuk nya string berkoma
-        // if (!empty($request->input('eventTheme'))) {
-        //     $validatedData['eventTheme'] = join(',', $request->input('eventTheme'));
-        // } else {
-        //     $validatedData['eventTheme'] = '';
-        // }
-
-        //logika untuk mulit checkbox untuk masukin ke database dalam bentuk array
-        //$validatedData['eventTheme'] = serialize($request['eventTheme']);
-
-        //  ddd($validatedData);
-        //jika ada gambar yang di upload
         if ($request->file('foto')) {
             $validatedData['foto'] = $request->file('foto')->store('foto'); //maka simpan di dalam storage/app/foto
         }
-
-
-        //dd($validatedData);
-
-
 
         Layanan::create($validatedData);
 
@@ -61,8 +43,6 @@ class LayananController extends Controller
         ]);
 
     }
-
-
 
     public function showPernikahan(Layanan $layanan)
     {
@@ -87,9 +67,6 @@ class LayananController extends Controller
         ]);
     }
 
-
-
-
     public function showAdmin(){
         return view('Admin.layadmin', [
             'layanans' => Layanan::all()
@@ -110,7 +87,6 @@ class LayananController extends Controller
             'judul' => 'required|max:255',
             'category' => 'required',
             'harga' => 'required',
-            // 'slug' => 'required|unique:posts',
             'foto' => 'image|file|max:5024|required', //maksudnya maksimal file nya 1024 kilobyte ata 1 mb
             'ringkasan' => 'required',
             'isi_paket' => 'required',
@@ -131,9 +107,7 @@ class LayananController extends Controller
 
         return redirect('/layanan-admin')->with('success', 'Event has Been Updated');
     }
-
-
-
+    
     public function destroy(Layanan $layanan)
     {
         //untuk mendelete image lama agar ga numpuk

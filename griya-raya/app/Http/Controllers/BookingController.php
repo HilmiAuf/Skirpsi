@@ -14,13 +14,11 @@ class BookingController extends Controller
 {
     public function booking(Request $request)
     {
-        // ddd($request);
 
         $validatedData = $request->validate([
             'judul' => 'required|max:255',
             'category' => 'required',
             'harga' => 'required',
-            // 'slug' => 'required|unique:posts',
             'foto' => 'required', //maksudnya maksimal file nya 1024 kilobyte ata 1 mb
             'ringkasan' => 'required',
             'isi_paket' => 'required',
@@ -44,15 +42,6 @@ class BookingController extends Controller
 
     public function destroy(Booking $booking)
     {
-        // $is_admin = User::select('utype')
-        // ->where('id', '=', auth()->user()->id)
-        // ->get();
-
-        // dd($is_admin);
-        //untuk mendelete image lama agar ga numpuk
-        // if ($booking->foto) {
-        //     Storage::delete($booking->foto);
-        // }
         Booking::destroy($booking->id);
 
         if(auth()->user()->utype === "ADM")
@@ -63,12 +52,6 @@ class BookingController extends Controller
         {
             return redirect('/pesanan')->with('success', 'booking has Been deleted');
         }
-
-        // if($is_admin == "ADM"){
-        //     return redirect('/book-admin');
-        // } elseif ($is_admin == "USR") {
-        //     return redirect('/pesanan')->with('success', 'booking has Been deleted');
-        // }
 
     }
 
