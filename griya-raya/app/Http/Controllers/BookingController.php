@@ -14,7 +14,6 @@ class BookingController extends Controller
 {
     public function booking(Request $request)
     {
-
         $validatedData = $request->validate([
             'judul' => 'required|max:255',
             'category' => 'required',
@@ -27,7 +26,6 @@ class BookingController extends Controller
             'tanggal' => 'required|date|after_or_equal:today',
             'jumlah_pengunjung' => 'required|min:1',
         ]);
-
         $validatedData['user_id'] = auth()->user()->id;
         Booking::create($validatedData);
         return redirect('/pesanan')->with('success', 'New Event has Been Added');
@@ -52,7 +50,6 @@ class BookingController extends Controller
         {
             return redirect('/pesanan')->with('success', 'booking has Been deleted');
         }
-
     }
 
     public function indexUser()
@@ -61,6 +58,5 @@ class BookingController extends Controller
             'bookings' => Booking::latest()->where('user_id', auth()->user()->id)->get(),
         ]);
     }
-
 }
 

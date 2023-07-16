@@ -13,7 +13,7 @@
                     <p class="fs-5">Email</p>
                     <p class="fs-3 fw-bold">{{ auth()->user()->email }}</p>
                 </div>
-                <div class="col-3" ">
+                <div class="col-3">
                     <a href="/edit-profile"> <i class="fas fa-edit text-black">Edit</i></a>
                 </div>
                 <img src="/source/img/Batas-layanan2.png" alt="">
@@ -40,11 +40,8 @@
                                 Password Salah!
                             </div>
                             @enderror
-
                         <label for="">Password Baru</label>
                         <input class="form-control " type="password" name="password" placeholder="Password Baru">
-
-
                         <label for="">Konfirmasi Password</label>
                         <input class="form-control @error('password') is-invalid @enderror" type="password"
                             name="password_confirmation" placeholder=" Konfirmasi Password ">
@@ -53,7 +50,6 @@
                             Password Tidak Cocok!
                         </div>
                         @enderror
-
                 </div>
                 <div class="col-3">
                     <button class="btn btn-primary">Simpan</button>

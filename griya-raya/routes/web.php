@@ -56,11 +56,10 @@ Route::get('/admin', function () {
     return view('Admin.admin');
 })->middleware('authadmin');
 
-   
 Route::get('/testimoni-admin', function () {
     return view('.Admin.testimoniadmin');
 });
-    
+
     //admin
 Route::get('/user-admin', [RegisterController::class, 'getUser'])->middleware('authadmin');
 Route::put('/user-admin/{user:id}', [RegisterController::class, 'addAdmin'])->middleware('authadmin');

@@ -21,10 +21,8 @@ class LoginController extends Controller
         //kalo berhasil dia akan menjalankan if ini
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-
             return redirect("/");
         }
-
         return back()->with('loginError', 'Login Failed');
     }
 

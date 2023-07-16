@@ -15,7 +15,7 @@ class RegisterController extends Controller
 {
     public function index()
     {
-        return view('registrasi');
+        return view('registrasi'); //menuju tampilan ragistrasi
     }
 
     public function store(Request $request)
@@ -24,7 +24,7 @@ class RegisterController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|max:255', //wajib diisi | maksimal 255
             'email' => 'required|email:dns|unique:users',
-            'password' => 'required|min:8|max:64|confirmed',
+            'password' => 'required|min:8|max:64|confirmed', //password minimal 8 sampai 64 huruf atau karakter
             'password_confirmation' => 'required'
 
         ]);
@@ -68,7 +68,7 @@ class RegisterController extends Controller
     public function updateChange(Request $request)
     {
         $request->validate([
-            'current_password' => 'required',
+            'current_password' => 'min:8|max:64|required',
             'password' => 'required|min:8|max:64|confirmed',
         ]);
         //jika current password  sama dengan password user sekarang
@@ -77,7 +77,7 @@ class RegisterController extends Controller
             return back()->with('success', 'Berhasil mengganti password');
         }
         throw ValidationException::withMessages([
-            'current_password' => 'your current password does not match with our record',
+            'current_password' => 'Kata sandi anda tidak sesuai',
         ]);
     }
 

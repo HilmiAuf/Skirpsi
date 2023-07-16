@@ -21,17 +21,14 @@ class LayananController extends Controller
             'judul' => 'required|max:255',
             'category' => 'required',
             'harga' => 'required',
-            'foto' => 'image|file|max:5024|required', //maksudnya maksimal file nya 1024 kilobyte ata 1 mb
+            'foto' => 'image|file|max:5024|required', //maksudnya maksimal file nya 5024 kilobyte atau 5 mb
             'ringkasan' => 'required',
             'isi_paket' => 'required',
         ]);
-
         if ($request->file('foto')) {
             $validatedData['foto'] = $request->file('foto')->store('foto'); //maka simpan di dalam storage/app/foto
         }
-
         Layanan::create($validatedData);
-
         return redirect('/layanan-admin')->with('success', 'New Event has Been Added');
     }
 
@@ -41,7 +38,6 @@ class LayananController extends Controller
         return view('pernikahan', [
             'layanans' => Layanan::all()->where('category', 'pernikahan')
         ]);
-
     }
 
     public function showPernikahan(Layanan $layanan)
@@ -57,7 +53,6 @@ class LayananController extends Controller
         return view('akadpernikahan', [
             'layanans' => Layanan::all()->where('category', 'akad nikah')
         ]);
-
     }
 
     public function showAkad(Layanan $layanan)
@@ -91,9 +86,7 @@ class LayananController extends Controller
             'ringkasan' => 'required',
             'isi_paket' => 'required',
         ];
-
         $validatedData = $request->validate($rules);
-
         //jika ada gambar yang di upload
         if ($request->file('foto')) {
             // ika ada foto lama, maka mendelete foto lama
@@ -102,12 +95,11 @@ class LayananController extends Controller
             }
             $validatedData['foto'] = $request->file('foto')->store('post-fotos'); //maka simpan di dalam post-images
         }
-
         Layanan::where('id', $layanan->id)->update($validatedData);
 
         return redirect('/layanan-admin')->with('success', 'Event has Been Updated');
     }
-    
+
     public function destroy(Layanan $layanan)
     {
         //untuk mendelete image lama agar ga numpuk
@@ -115,7 +107,6 @@ class LayananController extends Controller
             Storage::delete($layanan->foto);
         }
         Layanan::destroy($layanan->id);
-
         return redirect('/layanan-admin')->with('success', 'layanan has Been deleted');
     }
 }
