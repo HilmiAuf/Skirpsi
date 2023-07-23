@@ -56,6 +56,7 @@
                 <input type="hidden" name="isi_paket" value="{{$layanan->isi_paket}}">
                 <input type="hidden" name="foto" value="{{$layanan->foto}}">
                 <input type="hidden" name="ringkasan" value="{{$layanan->ringkasan}}">
+                <input type="hidden" name="status" value="DIPROSES">
                 <button type="submit" class="mb-2">Pesan Sekarang ! </button>
             </form>
             <img src="/source/img/Batas-layanan2.png" alt="">

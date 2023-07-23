@@ -13,6 +13,7 @@
                 <th scope="col">Nomor HP</th>
                 <th scope="col">Alamat</th>
                 <th scope="col">Jumlah Pengunjung</th>
+                <th scope="col">Status</th>
                 <th scope="col"></th>
             </tr>
         </thead>
@@ -27,6 +28,19 @@
                 <td>{{$booking->telepon}}</td>
                 <td>{{$booking->alamat}}</td>
                 <td>{{moneyFormat($booking->jumlah_pengunjung)}}</td>
+                <td>
+                    <form action="/book-admin/update" method="POST">
+                        @csrf
+                            {{ method_field('PUT') }}
+                        <input type="hidden" name="id" value="{{$booking->id}}">
+                        <select name="status" id="status" onchange="this.form.submit()">
+                            <option value="DIPROSES" <?php if($booking->status == 'DIPROSES'){ echo 'selected'; }; ?>>DIPROSES</option>
+                            <option value="DITERIMA" <?php if($booking->status == 'DITERIMA'){ echo 'selected'; }; ?>>DITERIMA</option>
+                            <option value="DITOLAK" <?php if($booking->status == 'DITOLAK'){ echo 'selected'; }; ?>>DITOLAK</option>
+                            <option value="SELESAI" <?php if($booking->status == 'SELESAI'){ echo 'selected'; }; ?>>SELESAI</option>
+                        </select>
+                    </form>
+                </td>
                 <td>
                     <form action="/deleteBooking/{{ $booking->id }}" method="POST" class="d-inline">
                         @method('delete')

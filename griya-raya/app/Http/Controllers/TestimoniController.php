@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Testimoni;
+use App\Models\Booking;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class TestimoniController extends Controller
@@ -34,7 +36,8 @@ class TestimoniController extends Controller
     {
         // ddd($category->id);
         return view('testimoni', [
-            'testimonis' => Testimoni::all()
+            'testimonis' => Testimoni::all(),
+            'bookings' => Booking::latest()->where('user_id', auth()->user()->id)->where('status', 'SELESAI')->get(),
         ]);
 
     }

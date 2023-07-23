@@ -82,7 +82,7 @@ class LayananController extends Controller
             'judul' => 'required|max:255',
             'category' => 'required',
             'harga' => 'required',
-            'foto' => 'image|file|max:5024|required', //maksudnya maksimal file nya 1024 kilobyte ata 1 mb
+            'foto' => 'image|file|max:5024|required', //maksudnya maksimal file nya 5024 kilobyte ata 5 mb
             'ringkasan' => 'required',
             'isi_paket' => 'required',
         ];

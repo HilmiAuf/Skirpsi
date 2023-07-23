@@ -25,6 +25,7 @@ class BookingController extends Controller
             'alamat' => 'required|min:10',
             'tanggal' => 'required|date|after_or_equal:today',
             'jumlah_pengunjung' => 'required|min:1',
+            'status' => 'required',
         ]);
         $validatedData['user_id'] = auth()->user()->id;
         Booking::create($validatedData);
@@ -58,5 +59,26 @@ class BookingController extends Controller
             'bookings' => Booking::latest()->where('user_id', auth()->user()->id)->get(),
         ]);
     }
+
+    public function update(Request $request, Booking $booking)
+    {
+        // dd($request);
+        // $rules = [
+        //     'status' => 'required',
+        // ];
+        // $validatedData = $request->validate($rules);
+        // Booking::where('id', $booking->id)->update($validatedData);
+
+        // // return redirect('/book-admin')->with('success', 'Booking has Been Updated');
+        // return redirect()->back()->with('success', 'your message,here');
+        Booking::where('id',$request->id)->update([
+            'status'=> $request->status,
+
+        ]);
+        return redirect()->to('/book-admin');
+
+    }
+
+
 }
 

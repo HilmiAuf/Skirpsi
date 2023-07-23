@@ -72,6 +72,7 @@ Route::get('/testimoni-admin', [TestimoniController::class, 'testimoniAdmin']);
 Route::delete('/deleteTestimoni/{testimoni:id}', [TestimoniController::class, 'destroy']);
 
 Route::get('/book-admin', [BookingController::class, 'index']);
+Route::put('/book-admin/update', [BookingController::class, 'update']);
 Route::delete('/deleteBooking/{booking:id}', [BookingController::class, 'destroy']);
 // ADD fitur
 

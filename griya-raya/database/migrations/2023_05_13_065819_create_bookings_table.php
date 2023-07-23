@@ -26,6 +26,7 @@ class CreateBookingsTable extends Migration
             $table->string('alamat');
             $table->date('tanggal');
             $table->string('jumlah_pengunjung');
+            $table->string('status');
             $table->timestamps();
         });
     }

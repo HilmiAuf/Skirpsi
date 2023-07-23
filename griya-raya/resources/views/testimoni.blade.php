@@ -11,7 +11,9 @@
             <span class="dua fs-2"> | Testimoni</span>
         </a>
         @auth
+        @foreach ($bookings as $bk)
         <a href="add-testimoni"> <button class="btn btn-lg mt-4" style="float : right;"> + Testimoni</button></a>
+        @endforeach
         @endauth
 
         @foreach ($testimonis as $testimoni)

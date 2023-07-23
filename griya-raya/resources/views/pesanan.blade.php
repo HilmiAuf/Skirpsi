@@ -17,6 +17,7 @@
                         <th scope="col">Harga</th>
                         <th scope="col">Alamat</th>
                         <th scope="col">Pengunjung</th>
+                        <th scope="col">Status</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
@@ -24,18 +25,24 @@
                     @foreach ($bookings as $booking)
                     <tr>
                         <th scope="row">{{$loop->iteration}}</th>
-                        <td>{{$booking->category}}</td>
+                        <td class="text-capitalize">{{$booking->category}}</td>
                         <td>{{$booking->judul}}</td>
                         <td>Rp {{moneyFormat($booking->harga)}}</td>
                         <td>{{$booking->alamat}}</td>
                         <td>{{moneyFormat($booking->jumlah_pengunjung)}}</td>
                         <td>
-                            <form action="/deleteBooking/{{ $booking->id }}" method="POST" class="d-inline">
-                                @method('delete')
-                                @csrf
-                                <button class="delete" onclick="return confirm('Apakah Kamu Yakin?')"><i
-                                        class="fas fa-trash-alt"></i></button>
-                            </form>
+                            {{$booking->status}}
+                        </td>
+                        <td>
+                            <?php if($booking->status == 'DIPROSES' || $booking->status == 'DITOLAK'){ ?>
+                                <form action="/deleteBooking/{{ $booking->id }}" method="POST" class="d-inline">
+                                    @method('delete')
+                                    @csrf
+                                    <button class="delete" onclick="return confirm('Apakah Kamu Yakin?')"><i
+                                            class="fas fa-trash-alt"></i></button>
+                                </form>
+                            <?php } else { ?>
+                            <?php } ?>
                         </td>
                     </tr>
                     @endforeach
