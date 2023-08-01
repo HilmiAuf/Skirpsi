@@ -7,8 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Layanan extends Model
 {
-    use HasFactory;
+    use HasFactory; 
      // biar gapake fillable, ini artinya cuma id doang yg gaboleh di masukin mass assigment
      protected $guarded = ['id'];
-
 }

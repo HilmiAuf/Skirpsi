@@ -35,11 +35,19 @@ class TestimoniController extends Controller
     public function getTestimoni()
     {
         // ddd($category->id);
-        return view('testimoni', [
-            'testimonis' => Testimoni::all(),
-            'bookings' => Booking::latest()->where('user_id', auth()->user()->id)->where('status', 'SELESAI')->get(),
-        ]);
-
+        if(auth()->check()) 
+        {
+            return view('testimoni', [
+                'testimonis' => Testimoni::all(),
+                'bookings' => Booking::latest()->where('user_id', auth()->user()->id)->where('status', 'SELESAI')->limit(1)->get(),
+            ]);
+        }
+        else
+        {
+            return view('testimoni', [
+                'testimonis' => Testimoni::all(),
+            ]);
+        }
     }
 
     public function testimoniAdmin()

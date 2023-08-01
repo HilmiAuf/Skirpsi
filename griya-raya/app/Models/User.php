@@ -40,7 +40,7 @@ class User extends Authenticatable
 
     public function booking()
     {
-        //relasi one to one
+        //relasi one to many satu user dapat booking berkali kali
         return $this->hasMany(Booking::class);
     }
 }
