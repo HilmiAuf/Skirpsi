@@ -11,7 +11,7 @@
     </div>
     <div class="row align-items-start justify-content-center visi-misi mb-3 mt-3">
         <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-sm-12 col-md-12 col-lg-6 align-self-center mb-3 mt-3 "  >
-            <img style="border-radius:10px;" src="/source/img/visi.png" alt="">
+            <img style="border-radius:10px;" src="/source/img/revisi (1).png" alt="">
         </div>
         <div data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-sm-12 col-md-12 col-lg-6 align-self-center mb-3 mt-3">
             <p class="fs-1">VISI</p>
@@ -37,7 +37,7 @@
             </p>
         </div>
         <div data-aos="fade-up-down" data-aos-offset="300" data-aos-easing="ease-in-sine"class="col-sm-12 col-md-12 col-lg-6 order-1 order-md-1 order-lg-2 order-sm-2 align-self-center mb-3 mt-3">
-            <img style="border-radius:10px;" src="/source/img/misi.png" alt="">
+            <img style="border-radius:10px;" src="/source/img/revisi (2).png" alt="">
         </div>
     </div>
     <img data-aos="zoom-in-up" src="/source/img/Top-layanan2.png" alt="">

@@ -4,7 +4,7 @@
     <img data-aos="zoom-in-up" src="/source/img/Top-layanan1.png" alt="">
     <div class="row mb-3">
         <div data-aos="zoom-in-down" class="col-sm-12 col-md-12 col-lg-6 ">
-            <img style="border-radius:10px;" src="/source/img/callcenter1.png" alt="">
+            <img style="border-radius:10px;" src="/source/img/revisi (3).png" alt="">
         </div>
         <div data-aos="zoom-in-down" class="col-sm-12 col-md-12 col-lg-6  "
             style="margin-top:auto; margin-bottom:auto;">
@@ -40,7 +40,7 @@
             </ul>
         </div>
         <div data-aos="zoom-in-up" class="col-sm-12 col-md-12 col-lg-6 order-1 order-md-1 order-lg-2 order-sm-2">
-            <img style="border-radius:10px;" src="/source/img/menghubungi.png" alt="">
+            <img style="border-radius:10px;" src="/source/img/revisi (4).png" alt="">
         </div>
     </div>
     <img data-aos="zoom-in-up" src="/source/img/Top-layanan2.png" alt="">
